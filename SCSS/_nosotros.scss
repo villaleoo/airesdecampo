@@ -1,0 +1,51 @@
+@import "colores";
+
+.contenidoNosotros{
+    min-height: calc(100vh - 90px - 141px);
+    width: 100%;
+    overflow: hidden;
+    .historia1{
+        margin:5px 0px;
+        overflow: hidden;
+    }
+    .imagenes1{
+        margin:5px 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .imgArriba{
+            margin:0px 2.5px;
+            width:50%;
+            height: 100%;             
+        }
+    }
+    .imagenes2{
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        .imgAbajo{
+            margin-top:0px;
+            margin-bottom: 5px;
+            width:90%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+    .historia2{
+        overflow: hidden;
+    }
+    .historia--encabezado{
+        overflow: hidden;
+        padding-left:2%;
+        font-size: xx-large;
+        font-style: italic;
+        color:$encabezados;
+    }
+    .historia--parrafo{
+        padding-left:4%;
+        width:93%;
+        height: 100%;
+        text-align: justify;
+        font-size:large;
+    }
+}

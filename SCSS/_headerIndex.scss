@@ -1,0 +1,21 @@
+@import "colores";
+
+.header{
+    height: 90px;
+    background-color: $header;
+}
+.login{
+    a{
+    font-size: medium;
+    }
+    .registro{
+        color:$navenlaces;
+    &:hover{
+        color:mediumblue;
+        text-decoration: underline;
+    }
+    }
+}
+.registroMobile{
+    display: none;
+}

@@ -1,0 +1,40 @@
+@import "colores";
+
+.contenidoContacto{
+    min-height: calc(100vh - 90px - 141px);
+    .contenedor_contacto{
+        margin-top: 1%;
+        .iframeMaps{
+            width: 95%;
+            height: 80%;
+        }
+    }
+    .contenedor_contactanos{
+        margin-top: 1%;
+        .form--consultas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+            .dataContactanos{
+                width: 100%;
+                margin:1% 0px;
+            }
+            .textoContactanos{
+                width: 100%;
+                margin:1% 0px;
+                height: 200px;
+            }
+            .inputEnviar{
+                margin-top: 2%;
+                width: 200px;
+                height: 50px;
+            }
+        }
+    }
+    .encabezadoContacto{
+        font-size: xx-large;
+        font-style: italic;
+        color:$encabezados;
+    }
+}
