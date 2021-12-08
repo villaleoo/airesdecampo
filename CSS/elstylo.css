@@ -122,7 +122,8 @@ body {
     justify-content: center; }
     .contenidoGaleria .columnasGaleria img {
       width: 92%;
-      height: 100%; }
+      height: 100%;
+      padding: 5%; }
   .contenidoGaleria img:hover {
     transform: scale(1.1, 1.1);
     transition: all 1.7s;
@@ -199,12 +200,10 @@ body {
       flex-direction: column;
       align-items: center;
       margin-top: 10%; }
-      .contenidoContacto .contenedor_contactanos .form--consultas .dataContactanos {
+      .contenidoContacto .contenedor_contactanos .form--consultas .dataContactanos, .contenidoContacto .contenedor_contactanos .form--consultas .textoContactanos {
         width: 100%;
         margin: 1% 0px; }
       .contenidoContacto .contenedor_contactanos .form--consultas .textoContactanos {
-        width: 100%;
-        margin: 1% 0px;
         height: 200px; }
       .contenidoContacto .contenedor_contactanos .form--consultas .inputEnviar {
         margin-top: 2%;
@@ -321,8 +320,8 @@ body {
         width: 100%; }
     .contenidoNosotros .historia2 {
       order: 3; }
-  .columnasGaleria img {
-    padding: 0px 2px;
+  .contenidoGaleria .columnasGaleria img {
+    padding: 5%;
     width: 100%;
     height: 100%; }
   .navegable {

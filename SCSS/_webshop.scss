@@ -1,11 +1,11 @@
 @import "colores";
+@import "mapa";
 
 .navegable{
     height: 50px;
     padding:0px;
     .filtrosShop{
-        display: flex;
-        justify-content:center;
+        @include flex-center;
         align-items: center;
         .estiloFiltro{
             padding:0px 30px;
@@ -50,7 +50,7 @@
             text-align: center;
             text-transform: uppercase;
             text-decoration: underline;
-            font-style: italic;
+            font-style: map-get($estilos,cursiva);
             font-weight: bold;
             font-size: x-large;
             color:rgb(100, 2, 2);

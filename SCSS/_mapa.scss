@@ -1,0 +1,10 @@
+$estilos:(
+    color:rgb(6, 82, 6),
+    cursiva:italic,
+    tFuente:xx-large,
+);
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
