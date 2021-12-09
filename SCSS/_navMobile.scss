@@ -8,6 +8,7 @@
         }
     }
     .login{
+        width:auto;
         .airesLogin{
             width:200px;
         }
@@ -16,6 +17,19 @@
         }
         .registro{
             display: none;
+        }
+    }
+}
+/*nav para paginas con GRID*/
+.contenedor__contacto{
+    .headerContacto{
+        background-color:rgb(129, 22, 22);
+        .estilosNav{
+            margin:auto 0px;
+            padding:8px 16px;
+            .estilosNavbar{
+                background-color:rgb(129, 22, 22) ;
+            }
         }
     }
 }

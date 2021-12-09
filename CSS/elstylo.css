@@ -18,14 +18,15 @@ body {
   height: 90px;
   background-color: rgba(129, 22, 22, 0.637); }
 
-.login a {
-  font-size: medium; }
-
-.login .registro {
-  color: lightyellow; }
-  .login .registro:hover {
-    color: mediumblue;
-    text-decoration: underline; }
+.login {
+  width: 250px; }
+  .login a {
+    font-size: medium; }
+  .login .registro {
+    color: lightyellow; }
+    .login .registro:hover {
+      color: mediumblue;
+      text-decoration: underline; }
 
 .registroMobile {
   display: none; }
@@ -50,6 +51,11 @@ body {
         .estilosNav .estilosNavbar .estilosMenu .nav-link:hover {
           color: lightyellow;
           text-decoration: underline; }
+
+/*header paginas con GRID*/
+.headerContacto {
+  grid-area: header;
+  display: flex; }
 
 .fondoIndex {
   background-image: url(../imagenes/imagenes_sitio/fondito.jpg);
@@ -185,62 +191,77 @@ body {
       transform: scale(1.05, 1.05);
       transition: all 1.2s; }
 
-.contenidoContacto {
-  min-height: calc(100vh - 90px - 141px); }
-  .contenidoContacto .contenedor_contacto {
-    margin-top: 1%; }
-    .contenidoContacto .contenedor_contacto .iframeMaps {
-      width: 95%;
-      height: 80%; }
-  .contenidoContacto .contenedor_contactanos {
-    margin-top: 1%; }
-    .contenidoContacto .contenedor_contactanos .form--consultas {
+.contenedor__contacto {
+  display: grid;
+  background-image: tan;
+  min-height: 100vh;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 90px calc(100vh - 90px - 141px) 140px;
+  grid-template-areas: "header header" "content consulta" "footer footer"; }
+  .contenedor__contacto .contenido__contacto, .contenedor__contacto .contactanos--consultas {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; }
+    .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+      width: 100%;
+      height: 80%;
+      margin-left: 10px; }
+  .contenedor__contacto .contactanos--consultas {
+    grid-area: consulta; }
+    .contenedor__contacto .contactanos--consultas .form--consultas {
+      margin-left: 0px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin-top: 10%; }
-      .contenidoContacto .contenedor_contactanos .form--consultas .dataContactanos {
-        width: 100%;
-        margin: 1% 0px; }
-      .contenidoContacto .contenedor_contactanos .form--consultas .textoContactanos {
-        width: 100%;
-        margin: 1% 0px;
-        height: 200px; }
-      .contenidoContacto .contenedor_contactanos .form--consultas .inputEnviar {
-        margin-top: 2%;
-        width: 200px;
-        height: 50px; }
-  .contenidoContacto .encabezadoContacto {
-    font-size: xx-large;
+      align-items: center; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+        font-size: large;
+        height: 10%;
+        margin: 5px 5px;
+        width: 90%; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+        height: 80%;
+        margin: 0px; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .inputEnviar {
+        font-size: large;
+        margin: 15px 0px;
+        width: 15%;
+        height: 10%; }
+  .contenedor__contacto .encabezadoContacto {
     font-style: italic;
+    font-size: xx-large;
+    margin-left: 20px;
     color: #065206; }
 
-.footer {
+.footer, .contenedorFooter {
   width: 100%;
   height: 140px;
   margin: 0px;
   background-color: rgba(15, 82, 44, 0.719); }
-  .footer .contenedorRedes {
+  .footer .contenedorRedes, .contenedorFooter .contenedorRedes {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .footer .contenedorRedes a {
+    .footer .contenedorRedes a, .contenedorFooter .contenedorRedes a {
       padding: 0px 2px; }
-  .footer .encabezado--newsletter {
+  .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
     color: lightyellow;
     font-size: x-large;
     font-weight: bold; }
-  .footer .animate__pulse {
+  .footer .animate__pulse, .contenedorFooter .animate__pulse {
     animation-iteration-count: infinite; }
-  .footer .suscripcion {
+  .footer .suscripcion, .contenedorFooter .suscripcion {
     margin-top: 10px; }
-    .footer .suscripcion .dataSuscripcion {
+    .footer .suscripcion .dataSuscripcion, .contenedorFooter .suscripcion .dataSuscripcion {
       border-radius: 10px;
       font-size: large;
       width: 100%;
       height: 40px; }
-    .footer .suscripcion .input__suscribirse {
+    .footer .suscripcion .input__suscribirse, .contenedorFooter .suscripcion .input__suscribirse {
       background-color: #8d2626;
       border: #0e3b0e;
       border-radius: 10px;
@@ -248,32 +269,90 @@ body {
       margin-left: 3%;
       width: min-content;
       height: min-content; }
-  .footer .copyright {
+  .footer .copyright, .contenedorFooter .copyright {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .footer .copyright .texto--copyright {
+    .footer .copyright .texto--copyright, .contenedorFooter .copyright .texto--copyright {
       font-size: large;
       text-align: center;
       color: rgba(255, 255, 224, 0.226); }
-  .footer .contenedor__whatsapp {
+  .footer .contenedor__whatsapp, .contenedorFooter .contenedor__whatsapp {
     width: min-content; }
-    .footer .contenedor__whatsapp a {
+    .footer .contenedor__whatsapp a, .contenedorFooter .contenedor__whatsapp a {
       position: fixed;
       bottom: 10px;
       right: 10px; }
-      .footer .contenedor__whatsapp a img {
+      .footer .contenedor__whatsapp a img, .contenedorFooter .contenedor__whatsapp a img {
         width: 40px; }
 
+/*footer de paginas hechas con GRID*/
+.contenedorFooter {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column; }
+  .contenedorFooter .contenedor__newsletter {
+    display: flex;
+    width: 100%;
+    padding: 0px 15px; }
+    .contenedorFooter .contenedor__newsletter .contenedorH3 {
+      width: 25%; }
+    .contenedorFooter .contenedor__newsletter .suscripcion {
+      width: 450px;
+      margin-left: 15px;
+      margin-right: 15px; }
+      .contenedorFooter .contenedor__newsletter .suscripcion .dataSuscripcion {
+        width: 100%; }
+    .contenedorFooter .contenedor__newsletter .suscripcionBtn {
+      margin-top: 10px;
+      margin-left: 30px; }
+      .contenedorFooter .contenedor__newsletter .suscripcionBtn .input__suscribirse {
+        background-color: #8d2626;
+        border: #0e3b0e;
+        border-radius: 10px;
+        font-size: large;
+        width: min-content;
+        height: min-content; }
+
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .footer {
+  .footer, .contenedorFooter {
     overflow: hidden; }
-    .footer .encabezado--newsletter {
+    .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
       font-size: 20px;
       overflow: hidden; }
   .imgArriba {
     padding-top: 17%;
-    height: 80%; } }
+    height: 80%; }
+  .contenedor__contacto {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 70px 1fr 100px;
+    grid-template-areas: "header nav" "content consulta" "footer footer"; }
+  .contenido__contacto, .contenedor__contacto .contactanos--consultas {
+    justify-content: flex-start;
+    margin: 0px 20px; }
+  .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+    height: 70%; }
+  .form--consultas {
+    height: 80%;
+    margin-top: 8%; }
+  .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+    font-size: large;
+    height: auto; }
+  .textoContactanos {
+    font-size: large;
+    height: 200px; }
+  .inputEnviar {
+    font-size: large;
+    margin: 5px 0px;
+    height: 8%; }
+  .encabezadoConsulta {
+    font-size: x-large;
+    margin-left: 0px;
+    padding-left: 35px; }
+  .encabezadoContacto {
+    padding: auto;
+    margin-left: 0px;
+    font-size: x-large; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .estilosNav {
@@ -282,12 +361,22 @@ body {
     background-color: #811616; }
     .estilosNav .estilosNavbar .estilosMenu {
       width: 100%; }
-    .estilosNav .login .airesLogin {
-      width: 200px; }
-    .estilosNav .login .registroMobile {
-      display: flex; }
-    .estilosNav .login .registro {
-      display: none; }
+    .estilosNav .login {
+      width: auto; }
+      .estilosNav .login .airesLogin {
+        width: 200px; }
+      .estilosNav .login .registroMobile {
+        display: flex; }
+      .estilosNav .login .registro {
+        display: none; }
+  /*nav para paginas con GRID*/
+  .contenedor__contacto .headerContacto {
+    background-color: #811616; }
+    .contenedor__contacto .headerContacto .estilosNav {
+      margin: auto 0px;
+      padding: 8px 16px; }
+      .contenedor__contacto .headerContacto .estilosNav .estilosNavbar {
+        background-color: #811616; }
   .mainHome {
     min-height: calc(100vh - 90px - 340px); }
     .mainHome .estilosLogo {
@@ -352,30 +441,59 @@ body {
     .contenidoShop .columnasShop img {
       height: 60%;
       margin: 30px; }
-  .contenidoContacto .contenedor_contacto {
-    padding: 0px; }
-    .contenidoContacto .contenedor_contacto .iframeMaps {
-      width: 100%; }
-  .contenidoContacto .encabezadoContacto {
-    font-size: x-large;
-    text-align: center; }
-  .contenidoContacto .inputEnviar {
-    margin-bottom: 2%; }
-  .footer {
+  .contenedor__contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 1fr 340px;
+    grid-template-areas: "header" "content" "consulta" "footer"; }
+    .contenedor__contacto .contenido__contacto, .contenedor__contacto .contactanos--consultas {
+      margin: 0px;
+      padding: 0px;
+      align-items: center; }
+      .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 85%; }
+    .contenedor__contacto .contactanos--consultas {
+      align-items: center;
+      padding-top: 10px; }
+      .contenedor__contacto .contactanos--consultas .form--consultas {
+        align-items: stretch; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+          font-size: medium;
+          width: auto;
+          height: auto;
+          margin: 5px 2%; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+          font-size: medium;
+          width: auto;
+          height: auto;
+          margin: 0px 2%; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .inputEnviar {
+          font-size: medium;
+          width: 25%;
+          height: 35px;
+          margin: auto;
+          margin-top: 2%;
+          margin-bottom: 2%; }
+    .contenedor__contacto .encabezadoContacto {
+      margin: auto;
+      font-size: x-large; }
+  .footer, .contenedorFooter {
     height: 340px; }
-    .footer .animate__pulse {
+    .footer .animate__pulse, .contenedorFooter .animate__pulse {
       animation-iteration-count: 0; }
-    .footer .encabezado--newsletter {
+    .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
       margin-top: 8px;
       text-align: center; }
-    .footer .suscripcion {
+    .footer .suscripcion, .contenedorFooter .suscripcion {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 5px; }
-      .footer .suscripcion .dataSuscripcion {
+      .footer .suscripcion .dataSuscripcion, .contenedorFooter .suscripcion .dataSuscripcion {
         height: 35px; }
-    .footer .texto--copyright {
+    .footer .texto--copyright, .contenedorFooter .texto--copyright {
       padding-top: 5px; }
-    .footer .contenedor__whatsapp img {
+    .footer .contenedor__whatsapp img, .contenedorFooter .contenedor__whatsapp img {
       width: 32px; } }
