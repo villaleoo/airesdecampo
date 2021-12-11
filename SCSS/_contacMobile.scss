@@ -1,6 +1,7 @@
+/*pagina hecha con GRID*/
 .contenedor__contacto{
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 1fr 340px;
+    grid-template-rows: auto 30% 30% 40%;
     grid-template-areas: 
     "header"
     "content"
@@ -49,3 +50,4 @@
         font-size: x-large;
     }
 }
+/*termina pagina hecha con GRID*/

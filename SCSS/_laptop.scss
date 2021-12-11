@@ -10,46 +10,46 @@
        padding-top: 17%;
        height:80%;
     }
+    /*paginas hechas con GRID*/
     .contenedor__contacto{
         grid-template-columns: 40% 60%;
-        grid-template-rows: 70px 1fr 100px;
+        grid-template-rows: 90px 1fr 138px;
         grid-template-areas:
-        "header nav"
+        "header header"
         "content consulta"
         "footer footer";
-    }
-    .contenido__contacto{
-        justify-content: flex-start;
-        margin:0px 20px;
-    }
-    .iframeMaps{
-        height: 70%;
-    }
-    .form--consultas{
-        height: 80%;
-        margin-top: 8%;
-    }
-    .dataContactanos{
-        font-size: large;
-        height: auto;
-    }
-    .textoContactanos{
-        font-size: large;
-        height: 200px;
-    }
-    .inputEnviar{
-        font-size: large;
-        margin:5px 0px;
-        height:8%;
-    }
-    .encabezadoConsulta{
-        font-size:x-large;
-        margin-left:0px;
-        padding-left: 35px;
-    }
-    .encabezadoContacto{
-        padding:auto;
-        margin-left:0px;
-        font-size: x-large;
+        .contenido__contacto{
+            .iframeMaps{
+                height: 80%;
+            }
+        }
+        .contactanos--consultas{
+            .form--consultas{
+                height: 80%;
+                width: 100%;
+            }
+        }
+        .contenedorFooter{
+            height: 138px;
+            .contenedor__newsletter{
+                width:100%;
+                .contenedorH3{
+                    width: 23%;
+                }
+                .contenedor__suscripcion{
+                    margin-left: 32px;
+                    margin-right: 0px;
+                    width:23.5%;
+                    .data--Suscripcion{
+                        width:100%;
+                    }
+                }
+                .contenedor__boton{
+                    margin-left: 3.5%;
+                }
+            }
+        }
     }
 }
+
+/*termina paginas hechas con GRID*/

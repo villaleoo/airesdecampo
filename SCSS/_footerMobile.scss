@@ -15,6 +15,9 @@
         .dataSuscripcion{
             height: 35px;
         }
+        .input__suscribirse{
+            margin-left: 0px;
+        }
     }
     .texto--copyright{
         padding-top: 5px;
@@ -25,3 +28,54 @@
         }
     }
 }
+/*footer de paginas hechas con GRID*/
+.contenedor__contacto{
+    .contenedorFooter{
+        height: min-content;
+        .contenedor__newsletter{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .contenedorH3{
+                margin-top: 4px;
+                padding-bottom: 15px;
+                width:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .contenedor__suscripcion{
+                width:100%;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-bottom: 11px;
+                .data--Suscripcion{
+                    height: 35px;
+                    width: 100%;
+                    margin:0px;
+                }
+            }
+            .contenedor__boton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top:0px;
+                margin-left: 0px;
+                .input--suscribirse{
+                    background-color: rgb(141, 38, 38);
+                    border:rgb(14, 59, 14);
+                    border-radius: 10px;
+                    font-size:large;
+                    width:min-content;
+                    height: min-content;
+                }
+            } 
+        }
+        .contenedor__pie{
+            margin-top: 6px;
+        }
+    }
+}
+/*termina footer de paginas hechas con GRID*/

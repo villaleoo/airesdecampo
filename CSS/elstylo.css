@@ -57,6 +57,7 @@ body {
   grid-area: header;
   display: flex; }
 
+/*termina header de paginas con GRID*/
 .fondoIndex {
   background-image: url(../imagenes/imagenes_sitio/fondito.jpg);
   background-position: center;
@@ -191,6 +192,7 @@ body {
       transform: scale(1.05, 1.05);
       transition: all 1.2s; }
 
+/*pagina hecha con GRID*/
 .contenedor__contacto {
   display: grid;
   background-image: tan;
@@ -236,32 +238,33 @@ body {
     margin-left: 20px;
     color: #065206; }
 
-.footer, .contenedorFooter {
+/*termina pagina con GRID*/
+.footer, .contenedor__contacto .contenedorFooter {
   width: 100%;
   height: 140px;
   margin: 0px;
   background-color: rgba(15, 82, 44, 0.719); }
-  .footer .contenedorRedes, .contenedorFooter .contenedorRedes {
+  .footer .contenedorRedes, .contenedor__contacto .contenedorFooter .contenedorRedes {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .footer .contenedorRedes a, .contenedorFooter .contenedorRedes a {
+    .footer .contenedorRedes a, .contenedor__contacto .contenedorFooter .contenedorRedes a {
       padding: 0px 2px; }
-  .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
+  .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
     color: lightyellow;
     font-size: x-large;
     font-weight: bold; }
-  .footer .animate__pulse, .contenedorFooter .animate__pulse {
+  .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
     animation-iteration-count: infinite; }
-  .footer .suscripcion, .contenedorFooter .suscripcion {
+  .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
     margin-top: 10px; }
-    .footer .suscripcion .dataSuscripcion, .contenedorFooter .suscripcion .dataSuscripcion {
+    .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
       border-radius: 10px;
       font-size: large;
       width: 100%;
       height: 40px; }
-    .footer .suscripcion .input__suscribirse, .contenedorFooter .suscripcion .input__suscribirse {
+    .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
       background-color: #8d2626;
       border: #0e3b0e;
       border-radius: 10px;
@@ -269,44 +272,53 @@ body {
       margin-left: 3%;
       width: min-content;
       height: min-content; }
-  .footer .copyright, .contenedorFooter .copyright {
+  .footer .copyright, .contenedor__contacto .contenedorFooter .copyright {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .footer .copyright .texto--copyright, .contenedorFooter .copyright .texto--copyright {
+    .footer .copyright .texto--copyright, .contenedor__contacto .contenedorFooter .copyright .texto--copyright {
       font-size: large;
       text-align: center;
       color: rgba(255, 255, 224, 0.226); }
-  .footer .contenedor__whatsapp, .contenedorFooter .contenedor__whatsapp {
+  .footer .contenedor__whatsapp, .contenedor__contacto .contenedorFooter .contenedor__whatsapp {
     width: min-content; }
-    .footer .contenedor__whatsapp a, .contenedorFooter .contenedor__whatsapp a {
+    .footer .contenedor__whatsapp a, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a {
       position: fixed;
       bottom: 10px;
       right: 10px; }
-      .footer .contenedor__whatsapp a img, .contenedorFooter .contenedor__whatsapp a img {
+      .footer .contenedor__whatsapp a img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a img {
         width: 40px; }
 
 /*footer de paginas hechas con GRID*/
-.contenedorFooter {
+.contenedor__contacto .contenedorFooter {
   grid-area: footer;
   display: flex;
   flex-direction: column; }
-  .contenedorFooter .contenedor__newsletter {
+  .contenedor__contacto .contenedorFooter .contenedor__redes {
+    display: flex;
+    justify-content: center; }
+    .contenedor__contacto .contenedorFooter .contenedor__redes img {
+      padding: 0px 2px; }
+  .contenedor__contacto .contenedorFooter .contenedor__newsletter {
     display: flex;
     width: 100%;
     padding: 0px 15px; }
-    .contenedorFooter .contenedor__newsletter .contenedorH3 {
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
       width: 25%; }
-    .contenedorFooter .contenedor__newsletter .suscripcion {
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
       width: 450px;
-      margin-left: 15px;
-      margin-right: 15px; }
-      .contenedorFooter .contenedor__newsletter .suscripcion .dataSuscripcion {
-        width: 100%; }
-    .contenedorFooter .contenedor__newsletter .suscripcionBtn {
+      margin-left: 7px;
+      margin-right: 23px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+        border-radius: 10px;
+        font-size: large;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
       margin-top: 10px;
-      margin-left: 30px; }
-      .contenedorFooter .contenedor__newsletter .suscripcionBtn .input__suscribirse {
+      margin-left: 21px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
         background-color: #8d2626;
         border: #0e3b0e;
         border-radius: 10px;
@@ -315,45 +327,40 @@ body {
         height: min-content; }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .footer, .contenedorFooter {
+  .footer, .contenedor__contacto .contenedorFooter {
     overflow: hidden; }
-    .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
+    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
       font-size: 20px;
       overflow: hidden; }
   .imgArriba {
     padding-top: 17%;
     height: 80%; }
+  /*paginas hechas con GRID*/
   .contenedor__contacto {
     grid-template-columns: 40% 60%;
-    grid-template-rows: 70px 1fr 100px;
-    grid-template-areas: "header nav" "content consulta" "footer footer"; }
-  .contenido__contacto, .contenedor__contacto .contactanos--consultas {
-    justify-content: flex-start;
-    margin: 0px 20px; }
-  .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
-    height: 70%; }
-  .form--consultas {
-    height: 80%;
-    margin-top: 8%; }
-  .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
-    font-size: large;
-    height: auto; }
-  .textoContactanos {
-    font-size: large;
-    height: 200px; }
-  .inputEnviar {
-    font-size: large;
-    margin: 5px 0px;
-    height: 8%; }
-  .encabezadoConsulta {
-    font-size: x-large;
-    margin-left: 0px;
-    padding-left: 35px; }
-  .encabezadoContacto {
-    padding: auto;
-    margin-left: 0px;
-    font-size: x-large; } }
+    grid-template-rows: 90px 1fr 138px;
+    grid-template-areas: "header header" "content consulta" "footer footer"; }
+    .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+      height: 80%; }
+    .contenedor__contacto .contactanos--consultas .form--consultas {
+      height: 80%;
+      width: 100%; }
+    .contenedor__contacto .contenedorFooter {
+      height: 138px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+        width: 100%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+          width: 23%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+          margin-left: 32px;
+          margin-right: 0px;
+          width: 23.5%; }
+          .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+            width: 100%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+          margin-left: 3.5%; } }
 
+/*termina paginas hechas con GRID*/
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .estilosNav {
     height: auto;
@@ -369,7 +376,7 @@ body {
         display: flex; }
       .estilosNav .login .registro {
         display: none; }
-  /*nav para paginas con GRID*/
+  /*nav para paginas hechas con GRID*/
   .contenedor__contacto .headerContacto {
     background-color: #811616; }
     .contenedor__contacto .headerContacto .estilosNav {
@@ -377,6 +384,7 @@ body {
       padding: 8px 16px; }
       .contenedor__contacto .headerContacto .estilosNav .estilosNavbar {
         background-color: #811616; }
+  /*termina nav para paginas hechas con GRID*/
   .mainHome {
     min-height: calc(100vh - 90px - 340px); }
     .mainHome .estilosLogo {
@@ -441,9 +449,10 @@ body {
     .contenidoShop .columnasShop img {
       height: 60%;
       margin: 30px; }
+  /*pagina hecha con GRID*/
   .contenedor__contacto {
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 1fr 340px;
+    grid-template-rows: auto 30% 30% 40%;
     grid-template-areas: "header" "content" "consulta" "footer"; }
     .contenedor__contacto .contenido__contacto, .contenedor__contacto .contactanos--consultas {
       margin: 0px;
@@ -479,21 +488,65 @@ body {
     .contenedor__contacto .encabezadoContacto {
       margin: auto;
       font-size: x-large; }
-  .footer, .contenedorFooter {
+  /*termina pagina hecha con GRID*/
+  .footer, .contenedor__contacto .contenedorFooter {
     height: 340px; }
-    .footer .animate__pulse, .contenedorFooter .animate__pulse {
+    .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
       animation-iteration-count: 0; }
-    .footer .encabezado--newsletter, .contenedorFooter .encabezado--newsletter {
+    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
       margin-top: 8px;
       text-align: center; }
-    .footer .suscripcion, .contenedorFooter .suscripcion {
+    .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 5px; }
-      .footer .suscripcion .dataSuscripcion, .contenedorFooter .suscripcion .dataSuscripcion {
+      .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
         height: 35px; }
-    .footer .texto--copyright, .contenedorFooter .texto--copyright {
+      .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
+        margin-left: 0px; }
+    .footer .texto--copyright, .contenedor__contacto .contenedorFooter .texto--copyright {
       padding-top: 5px; }
-    .footer .contenedor__whatsapp img, .contenedorFooter .contenedor__whatsapp img {
-      width: 32px; } }
+    .footer .contenedor__whatsapp img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp img {
+      width: 32px; }
+  /*footer de paginas hechas con GRID*/
+  .contenedor__contacto .contenedorFooter {
+    height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+        margin-top: 4px;
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 11px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+          height: 35px;
+          width: 100%;
+          margin: 0px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
+          background-color: #8d2626;
+          border: #0e3b0e;
+          border-radius: 10px;
+          font-size: large;
+          width: min-content;
+          height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__pie {
+      margin-top: 6px; }
+  /*termina footer de paginas hechas con GRID*/ }
