@@ -7,9 +7,16 @@
             overflow:hidden;
         }
     }
-    .imgArriba{
-       padding-top: 17%;
-       height:80%;
+    .contenidoNosotros{
+        .imagenes1{
+            .imgArriba{
+            padding-top: 17%;
+            height:80%;
+            }
+        }
+        .historia--parrafo{
+            font-size:map-get($estilosTexto,fuenteDesktop);
+        }
     }
     .contenidoGaleria{
         margin:1.5% 0.5%;

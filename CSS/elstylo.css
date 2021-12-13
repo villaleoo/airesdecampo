@@ -117,7 +117,9 @@ body {
     padding-left: 4%;
     width: 93%;
     height: 100%;
-    text-align: justify; }
+    text-align: justify;
+    font-size: x-large;
+    color: black; }
 
 .contenidoGaleria {
   min-height: calc(100vh - 90px - 141px);
@@ -158,7 +160,8 @@ body {
 
 .contenidoShop {
   min-height: calc(100vh - 180px - 141px);
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-bottom: 7px; }
   .contenidoShop .columnasShop {
     background-color: rgba(46, 139, 86, 0.425);
     display: flex;
@@ -174,8 +177,7 @@ body {
       width: 100%;
       height: 420px;
       margin: 10px 100px;
-      padding: 0px 10px;
-      border-radius: 20px; }
+      padding: 0px 10px; }
     .contenidoShop .columnasShop .descripcionProducto {
       text-align: center;
       text-transform: uppercase;
@@ -334,9 +336,11 @@ body {
     .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
       font-size: 20px;
       overflow: hidden; }
-  .imgArriba {
+  .contenidoNosotros .imagenes1 .imgArriba {
     padding-top: 17%;
     height: 80%; }
+  .contenidoNosotros .historia--parrafo {
+    font-size: large; }
   .contenidoGaleria {
     margin: 1.5% 0.5%; }
   /*paginas hechas con GRID*/
@@ -422,6 +426,8 @@ body {
         width: 100%; }
     .contenidoNosotros .historia2 {
       order: 3; }
+    .contenidoNosotros .historia--parrafo {
+      font-size: large; }
   .contenidoGaleria {
     margin: 2.5% 2.5%; }
     .contenidoGaleria .columnasGaleria img {

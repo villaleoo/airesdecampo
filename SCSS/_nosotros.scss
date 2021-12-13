@@ -45,6 +45,7 @@
         width:93%;
         height: 100%;
         text-align: map-get($estilosTexto,justificado);
-        font-size:map-get($estilosTexto,fuentedesktop);
+        font-size:map-get($estilosTexto,fuenteXdesktop);
+        color:black;
     }
 }

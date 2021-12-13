@@ -31,4 +31,7 @@
     .historia2{
         order:3;
     }
+    .historia--parrafo{
+        font-size:map-get($estilosTexto,fuenteDesktop);
+    }
 }
