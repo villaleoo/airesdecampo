@@ -1,6 +1,7 @@
+@import "variables";
 .contenidoGaleria{
     min-height: calc(100vh - 90px - 141px);
-    margin:1% 0px;
+    margin:30px 5px;
     .columnasGaleria{
         padding:0px;
         display: flex;

@@ -1,0 +1,37 @@
+$cFondoPags:tan;
+$cEncabezados:rgb(6, 82, 6);
+$cHeader:rgba(129, 22, 22, 0.637);
+$cHeaderMob:rgb(129, 22, 22);
+$cFooter:rgba(15, 82, 44, 0.719);
+$cEnlaces:lightyellow;
+
+$estilosTexto:(
+    fuenteMobile:medium,
+    fuenteDesktop:large,
+    fuenteXdesktop:x-large,
+    fuenteXXdesktop:xx-large,
+    justificado: justify,
+    cursiva: italic,
+);
+
+@mixin flex-column-center {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-row-center-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textoCentro {
+    text-align: center; 
+}
+
+@mixin fullTamanio {
+    width: 100%;
+    height: 100%;
+}

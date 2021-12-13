@@ -1,16 +1,16 @@
-@import "colores";
+@import "variables";
 
 .header{
     height: 90px;
-    background-color: $header;
+    background-color: $cHeader;
 }
 .login{
     width:250px;
     a{
-    font-size: medium;
+    font-size: map-get($estilosTexto, fuenteMobile);
     }
     .registro{
-        color:$navenlaces;
+        color:$cEnlaces;
     &:hover{
         color:mediumblue;
         text-decoration: underline;

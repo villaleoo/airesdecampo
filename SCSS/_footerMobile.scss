@@ -1,3 +1,4 @@
+@import "variables";
 .footer{
     height:340px;
     .animate__pulse{
@@ -5,12 +6,10 @@
     }
     .encabezado--newsletter{
         margin-top: 8px;
-        text-align: center;
+        @include textoCentro;
     }
     .suscripcion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center-center;
         margin-top: 5px;
         .dataSuscripcion{
             height: 35px;
@@ -40,9 +39,7 @@
                 margin-top: 4px;
                 padding-bottom: 15px;
                 width:100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-row-center-center;
             }
             .contenedor__suscripcion{
                 width:100%;
@@ -57,17 +54,15 @@
                 }
             }
             .contenedor__boton{
-                display: flex;
-                justify-content: center;
+                @include flex-column-center;
                 align-items: center;
-                flex-direction: column;
                 margin-top:0px;
                 margin-left: 0px;
                 .input--suscribirse{
                     background-color: rgb(141, 38, 38);
                     border:rgb(14, 59, 14);
                     border-radius: 10px;
-                    font-size:large;
+                    font-size:map-get($estilosTexto, fuenteDesktop);
                     width:min-content;
                     height: min-content;
                 }

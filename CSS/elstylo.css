@@ -39,7 +39,7 @@ body {
   width: 100%;
   height: 90px;
   z-index: 500;
-  font-size: larger; }
+  font-size: large; }
   .estilosNav .estilosNavbar {
     justify-content: flex-end; }
     .estilosNav .estilosNavbar .estilosMenu {
@@ -117,12 +117,11 @@ body {
     padding-left: 4%;
     width: 93%;
     height: 100%;
-    text-align: justify;
-    font-size: large; }
+    text-align: justify; }
 
 .contenidoGaleria {
   min-height: calc(100vh - 90px - 141px);
-  margin: 1% 0px; }
+  margin: 30px 5px; }
   .contenidoGaleria .columnasGaleria {
     padding: 0px;
     display: flex;
@@ -141,6 +140,7 @@ body {
   padding: 0px; }
   .navegable .filtrosShop {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
     .navegable .filtrosShop .estiloFiltro {
@@ -205,8 +205,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow-x: hidden; }
     .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
       width: 100%;
@@ -247,6 +247,7 @@ body {
   .footer .contenedorRedes, .contenedor__contacto .contenedorFooter .contenedorRedes {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
     .footer .contenedorRedes a, .contenedor__contacto .contenedorFooter .contenedorRedes a {
@@ -274,6 +275,7 @@ body {
       height: min-content; }
   .footer .copyright, .contenedor__contacto .contenedorFooter .copyright {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; }
     .footer .copyright .texto--copyright, .contenedor__contacto .contenedorFooter .copyright .texto--copyright {
@@ -335,6 +337,8 @@ body {
   .imgArriba {
     padding-top: 17%;
     height: 80%; }
+  .contenidoGaleria {
+    margin: 1.5% 0.5%; }
   /*paginas hechas con GRID*/
   .contenedor__contacto {
     grid-template-columns: 40% 60%;
@@ -418,10 +422,12 @@ body {
         width: 100%; }
     .contenidoNosotros .historia2 {
       order: 3; }
-  .columnasGaleria img {
-    padding: 0px 2px;
-    width: 100%;
-    height: 100%; }
+  .contenidoGaleria {
+    margin: 2.5% 2.5%; }
+    .contenidoGaleria .columnasGaleria img {
+      padding: 0px 2px;
+      width: 100%;
+      height: 100%; }
   .navegable {
     flex-wrap: nowrap; }
     .navegable .filtrosShop {
@@ -498,6 +504,7 @@ body {
       text-align: center; }
     .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       margin-top: 5px; }
@@ -521,6 +528,7 @@ body {
         padding-bottom: 15px;
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center; }
       .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
@@ -535,9 +543,9 @@ body {
           margin: 0px; }
       .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
         margin-top: 0px;
         margin-left: 0px; }
         .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {

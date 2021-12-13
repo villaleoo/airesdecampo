@@ -1,4 +1,4 @@
-@import "colores";
+@import "variables";
 /*pagina hecha con GRID*/
 .contenedor__contacto{
     display:grid;
@@ -12,11 +12,8 @@
     "footer footer";
     .contenido__contacto{
         grid-area:content;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
+        @include flex-column-center;
+        @include fullTamanio;
         overflow-x: hidden;
         .iframeMaps{
             width:100%;
@@ -34,7 +31,7 @@
             flex-direction: column;
             align-items: center;   
             .dataContactanos{
-                font-size: large;
+                font-size: map-get($estilosTexto, fuenteDesktop);
                 height: 10%;
                 margin:5px 5px;
                 width:90%;
@@ -45,7 +42,7 @@
                 margin:0px;
             }
             .inputEnviar{
-                font-size: large;
+                font-size:map-get($estilosTexto, fuenteDesktop);
                 margin:15px 0px;
                 width:15%;
                 height:10%;
@@ -53,10 +50,10 @@
         }
     }
     .encabezadoContacto{
-        font-style: italic;
-        font-size: xx-large;
+        font-style: map-get($estilosTexto, cursiva);
+        font-size: map-get($estilosTexto, fuenteXXdesktop);
         margin-left: 20px;
-        color:$encabezados;
+        color:$cEncabezados;
     }
 }
 /*termina pagina con GRID*/

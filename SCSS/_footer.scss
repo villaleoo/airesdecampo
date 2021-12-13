@@ -1,4 +1,4 @@
-@import "colores";
+@import "variables";
 
 .footer{
     width: 100%;
@@ -7,16 +7,14 @@
     background-color: rgba(15, 82, 44, 0.719);
     .contenedorRedes{
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center-center;
         a{
             padding:0px 2px;
         }
     }
     .encabezado--newsletter{
-        color: $navenlaces;
-        font-size: x-large;
+        color: $cEnlaces;
+        font-size: map-get($estilosTexto, fuenteXdesktop);
         font-weight: bold;
     }
     .animate__pulse{
@@ -26,7 +24,7 @@
         margin-top:10px;
         .dataSuscripcion{
             border-radius: 10px;
-            font-size: large;
+            font-size: map-get($estilosTexto, fuenteDesktop);
             width: 100%;
             height: 40px;
         }
@@ -34,19 +32,17 @@
             background-color: rgb(141, 38, 38);
             border:rgb(14, 59, 14);
             border-radius: 10px;
-            font-size:large;
+            font-size:map-get($estilosTexto, fuenteDesktop);
             margin-left: 3%;
             width:min-content;
             height: min-content;
         }
     }
     .copyright{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center-center;
         .texto--copyright{
-            font-size:large;
-            text-align: center;
+            font-size:map-get($estilosTexto, fuenteDesktop);
+            @include textoCentro;
             color: rgba(255, 255, 224, 0.226);
         }
     }
@@ -91,7 +87,7 @@
                 margin-right:23px;
                 .data--Suscripcion{
                     border-radius: 10px;
-                    font-size: large;
+                    font-size: map-get($estilosTexto, fuenteDesktop);
                     width: 100%;
                     height: 40px;
                     margin-top: 10px;
@@ -104,7 +100,7 @@
                     background-color: rgb(141, 38, 38);
                     border:rgb(14, 59, 14);
                     border-radius: 10px;
-                    font-size:large;
+                    font-size:map-get($estilosTexto, fuenteDesktop);
                     width:min-content;
                     height: min-content;
                 }

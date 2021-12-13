@@ -1,7 +1,8 @@
+@import "variables";
 .estilosNav{
     height: auto;
     font-size: larger;
-    background-color:rgb(129, 22, 22);
+    background-color:$cHeaderMob;
     .estilosNavbar{
         .estilosMenu{
             width:100%
@@ -23,12 +24,12 @@
 /*nav para paginas hechas con GRID*/
 .contenedor__contacto{
     .headerContacto{
-        background-color:rgb(129, 22, 22);
+        background-color:$cHeaderMob;
         .estilosNav{
             margin:auto 0px;
             padding:8px 16px;
             .estilosNavbar{
-                background-color:rgb(129, 22, 22) ;
+                background-color:$cHeaderMob;
             }
         }
     }

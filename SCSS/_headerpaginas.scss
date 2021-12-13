@@ -1,14 +1,14 @@
-@import "colores";
+@import "variables";
 
 .airesLogin{
     width:250px;
 }
 .estilosNav{
-    background-color:$header;
+    background-color:$cHeader;
     width: 100%;
     height: 90px;
     z-index: 500;
-    font-size: larger;
+    font-size: map-get($estilosTexto, fuenteDesktop);
     .estilosNavbar{
         justify-content: flex-end;
         .estilosMenu{
@@ -16,9 +16,9 @@
             justify-content: space-around;
             width: 60%;
             .nav-link{
-                color:$navenlaces;
+                color:$cEnlaces;
             &:hover{
-                color:$navenlaces;
+                color:$cEnlaces;
                 text-decoration: underline;
             }       
             }

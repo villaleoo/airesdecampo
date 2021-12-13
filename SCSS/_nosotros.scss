@@ -1,5 +1,4 @@
-@import "colores";
-
+@import "variables";
 .contenidoNosotros{
     min-height: calc(100vh - 90px - 141px);
     width: 100%;
@@ -37,15 +36,15 @@
     .historia--encabezado{
         overflow: hidden;
         padding-left:2%;
-        font-size: xx-large;
-        font-style: italic;
-        color:$encabezados;
+        font-size:map-get($estilosTexto,fuenteXXdesktop);
+        font-style:map-get($estilosTexto,cursiva);
+        color:$cEncabezados;
     }
     .historia--parrafo{
         padding-left:4%;
         width:93%;
         height: 100%;
-        text-align: justify;
-        font-size:large;
+        text-align: map-get($estilosTexto,justificado);
+        font-size:map-get($estilosTexto,fuentedesktop);
     }
 }
