@@ -163,7 +163,7 @@ body {
   justify-content: space-evenly;
   margin-bottom: 7px; }
   .contenidoShop .columnasShop {
-    background-color: rgba(46, 139, 86, 0.425);
+    background-color: rgba(255, 255, 255, 0.822);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -181,9 +181,8 @@ body {
     .contenidoShop .columnasShop .descripcionProducto {
       text-align: center;
       text-transform: uppercase;
-      text-decoration: underline;
       font-style: italic;
-      font-weight: bold;
+      font-weight: bolder;
       font-size: x-large;
       color: #640202; }
     .contenidoShop .columnasShop .precioProducto {

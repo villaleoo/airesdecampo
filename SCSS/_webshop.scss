@@ -28,7 +28,7 @@
     justify-content: space-evenly;
     margin-bottom: 7px;
     .columnasShop{
-        background-color: rgba(46, 139, 86, 0.425);
+        background-color: rgba(255, 255, 255, 0.822);
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -47,9 +47,8 @@
         .descripcionProducto{
             @include textoCentro;
             text-transform: uppercase;
-            text-decoration: underline;
             font-style: map-get($estilosTexto,cursiva);
-            font-weight: bold;
+            font-weight: bolder;
             font-size: map-get($estilosTexto,fuenteXdesktop);
             color:rgb(100, 2, 2);
         }
