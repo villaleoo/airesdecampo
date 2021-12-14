@@ -1,0 +1,54 @@
+@import "variables";
+/*pagina hecha con GRID*/
+.contenedor__contacto{
+    grid-template-columns: 100%;
+    grid-template-rows: auto 30% 30% 40%;
+    grid-template-areas: 
+    "header"
+    "content"
+    "consulta"
+    "footer";
+    .contenido__contacto{
+        margin:0px;
+        padding: 0px;
+        align-items: center;
+        .iframeMaps{
+            margin:0px;
+            padding:0px;
+            width: 100%;
+            height: 85%;
+        }
+    }
+    .contactanos--consultas{
+        align-items: center;
+        padding-top: 10px;
+        .form--consultas{
+            align-items: stretch;
+            .dataContactanos{
+                font-size: medium;
+                width: auto;
+                height: auto;
+                margin:5px 2%;
+            }
+            .textoContactanos{
+                font-size: medium;
+                width: auto;
+                height: auto;
+                margin:0px 2%;
+            }
+            .inputEnviar{
+                font-size: medium;
+                width:25%;
+                height: 35px;
+                margin:auto;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+    .encabezadoContacto{
+        margin:auto;
+        font-size: x-large;
+    }
+}
+/*termina pagina hecha con GRID*/

@@ -1,0 +1,22 @@
+@import "variables";
+
+.header{
+    height: 90px;
+    background-color: $cHeader;
+}
+.login{
+    width:250px;
+    a{
+    font-size: map-get($estilosTexto, fuenteMobile);
+    }
+    .registro{
+        color:$cEnlaces;
+    &:hover{
+        color:mediumblue;
+        text-decoration: underline;
+    }
+    }
+}
+.registroMobile{
+    display: none;
+}

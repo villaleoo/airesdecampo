@@ -1,0 +1,10 @@
+@import "variables";
+.contenidoGaleria{
+    margin:2.5% 2.5%;
+    .columnasGaleria{
+        img{
+        padding:0px 2px;
+        @include fullTamanio;
+        }
+    }
+}

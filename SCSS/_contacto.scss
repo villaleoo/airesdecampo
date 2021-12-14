@@ -1,0 +1,59 @@
+@import "variables";
+/*pagina hecha con GRID*/
+.contenedor__contacto{
+    display:grid;
+    background-image:tan;
+    min-height: 100vh;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 90px calc(100vh - 90px - 141px) 140px;
+    grid-template-areas:
+    "header header"
+    "content consulta"
+    "footer footer";
+    .contenido__contacto{
+        grid-area:content;
+        @include flex-column-center;
+        @include fullTamanio;
+        overflow-x: hidden;
+        .iframeMaps{
+            width:100%;
+            height: 80%;
+            margin-left: 10px;
+        }
+    }
+    .contactanos--consultas{
+        grid-area:consulta;
+        @extend .contenido__contacto;
+        .form--consultas{
+            @extend .iframeMaps;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            .dataContactanos{
+                font-size: map-get($estilosTexto, fuenteDesktop);
+                height: 10%;
+                margin:5px 5px;
+                width:90%;
+            }
+            .textoContactanos{
+                @extend .dataContactanos;
+                height: 80%;
+                margin:0px;
+            }
+            .inputEnviar{
+                font-size:map-get($estilosTexto, fuenteDesktop);
+                margin:15px 0px;
+                width:15%;
+                height:10%;
+            }
+        }
+    }
+    .encabezadoContacto{
+        font-style: map-get($estilosTexto, cursiva);
+        font-size: map-get($estilosTexto, fuenteXXdesktop);
+        margin-left: 20px;
+        color:$cEncabezados;
+    }
+}
+/*termina pagina con GRID*/

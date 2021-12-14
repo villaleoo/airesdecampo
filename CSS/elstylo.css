@@ -1,0 +1,565 @@
+body {
+  background-color: tan;
+  margin: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 100vh; }
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0px;
+  overflow: hidden; }
+
+.row {
+  margin: 0px; }
+
+.header {
+  height: 90px;
+  background-color: rgba(129, 22, 22, 0.637); }
+
+.login {
+  width: 250px; }
+  .login a {
+    font-size: medium; }
+  .login .registro {
+    color: lightyellow; }
+    .login .registro:hover {
+      color: mediumblue;
+      text-decoration: underline; }
+
+.registroMobile {
+  display: none; }
+
+.airesLogin {
+  width: 250px; }
+
+.estilosNav {
+  background-color: rgba(129, 22, 22, 0.637);
+  width: 100%;
+  height: 90px;
+  z-index: 500;
+  font-size: large; }
+  .estilosNav .estilosNavbar {
+    justify-content: flex-end; }
+    .estilosNav .estilosNavbar .estilosMenu {
+      text-align: center;
+      justify-content: space-around;
+      width: 60%; }
+      .estilosNav .estilosNavbar .estilosMenu .nav-link {
+        color: lightyellow; }
+        .estilosNav .estilosNavbar .estilosMenu .nav-link:hover {
+          color: lightyellow;
+          text-decoration: underline; }
+
+/*header paginas con GRID*/
+.headerContacto {
+  grid-area: header;
+  display: flex; }
+
+/*termina header de paginas con GRID*/
+.fondoIndex {
+  background-image: url(../imagenes/imagenes_sitio/fondito.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.mainHome {
+  min-height: calc(100vh - 90px - 140px); }
+  .mainHome .estilosLogo {
+    position: absolute;
+    z-index: 2;
+    overflow-x: hidden;
+    top: 33%;
+    bottom: auto;
+    right: 0px;
+    left: 20%;
+    width: 60%;
+    height: 14%; }
+    .mainHome .estilosLogo img {
+      width: 100%;
+      height: 100%; }
+
+.contenidoNosotros {
+  min-height: calc(100vh - 90px - 141px);
+  width: 100%;
+  overflow: hidden; }
+  .contenidoNosotros .historia1 {
+    margin: 5px 0px;
+    overflow: hidden; }
+  .contenidoNosotros .imagenes1 {
+    margin: 5px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .contenidoNosotros .imagenes1 .imgArriba {
+      margin: 0px 2.5px;
+      width: 50%;
+      height: 100%; }
+  .contenidoNosotros .imagenes2 {
+    overflow: hidden;
+    display: flex;
+    width: 100%; }
+    .contenidoNosotros .imagenes2 .imgAbajo {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      width: 90%;
+      height: 100%;
+      overflow: hidden; }
+  .contenidoNosotros .historia2 {
+    overflow: hidden; }
+  .contenidoNosotros .historia--encabezado {
+    overflow: hidden;
+    padding-left: 2%;
+    font-size: xx-large;
+    font-style: italic;
+    color: #065206; }
+  .contenidoNosotros .historia--parrafo {
+    padding-left: 4%;
+    width: 93%;
+    height: 100%;
+    text-align: justify;
+    font-size: x-large;
+    color: black; }
+
+.contenidoGaleria {
+  min-height: calc(100vh - 90px - 141px);
+  margin: 30px 5px; }
+  .contenidoGaleria .columnasGaleria {
+    padding: 0px;
+    display: flex;
+    justify-content: center; }
+    .contenidoGaleria .columnasGaleria img {
+      width: 92%;
+      height: 100%; }
+  .contenidoGaleria img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1.7s;
+    position: absolute;
+    z-index: 9999; }
+
+.navegable {
+  height: 50px;
+  padding: 0px; }
+  .navegable .filtrosShop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .navegable .filtrosShop .estiloFiltro {
+      padding: 0px 30px;
+      text-transform: uppercase; }
+    .navegable .filtrosShop .filtroMobile {
+      display: none; }
+  .navegable .contenedor_carrito {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%; }
+    .navegable .contenedor_carrito img {
+      cursor: pointer; }
+
+.contenidoShop {
+  min-height: calc(100vh - 180px - 141px);
+  justify-content: space-evenly;
+  margin-bottom: 7px; }
+  .contenidoShop .columnasShop {
+    background-color: rgba(255, 255, 255, 0.822);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    height: 600px;
+    cursor: pointer;
+    border-radius: 30px; }
+    .contenidoShop .columnasShop img {
+      width: 100%;
+      height: 420px;
+      margin: 10px 100px;
+      padding: 0px 10px; }
+    .contenidoShop .columnasShop .descripcionProducto {
+      text-align: center;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: x-large;
+      color: #640202; }
+    .contenidoShop .columnasShop .precioProducto {
+      font-size: x-large;
+      font-weight: bold;
+      color: black; }
+    .contenidoShop .columnasShop:hover {
+      transform: scale(1.05, 1.05);
+      transition: all 1.2s; }
+
+/*pagina hecha con GRID*/
+.contenedor__contacto {
+  display: grid;
+  background-image: tan;
+  min-height: 100vh;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 90px calc(100vh - 90px - 141px) 140px;
+  grid-template-areas: "header header" "content consulta" "footer footer"; }
+  .contenedor__contacto .contenido__contacto, .contenedor__contacto .contactanos--consultas {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+    .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+      width: 100%;
+      height: 80%;
+      margin-left: 10px; }
+  .contenedor__contacto .contactanos--consultas {
+    grid-area: consulta; }
+    .contenedor__contacto .contactanos--consultas .form--consultas {
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+        font-size: large;
+        height: 10%;
+        margin: 5px 5px;
+        width: 90%; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+        height: 80%;
+        margin: 0px; }
+      .contenedor__contacto .contactanos--consultas .form--consultas .inputEnviar {
+        font-size: large;
+        margin: 15px 0px;
+        width: 15%;
+        height: 10%; }
+  .contenedor__contacto .encabezadoContacto {
+    font-style: italic;
+    font-size: xx-large;
+    margin-left: 20px;
+    color: #065206; }
+
+/*termina pagina con GRID*/
+.footer, .contenedor__contacto .contenedorFooter {
+  width: 100%;
+  height: 140px;
+  margin: 0px;
+  background-color: rgba(15, 82, 44, 0.719); }
+  .footer .contenedorRedes, .contenedor__contacto .contenedorFooter .contenedorRedes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .contenedorRedes a, .contenedor__contacto .contenedorFooter .contenedorRedes a {
+      padding: 0px 2px; }
+  .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
+    color: lightyellow;
+    font-size: x-large;
+    font-weight: bold; }
+  .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
+    animation-iteration-count: infinite; }
+  .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
+    margin-top: 10px; }
+    .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
+      border-radius: 10px;
+      font-size: large;
+      width: 100%;
+      height: 40px; }
+    .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
+      background-color: #8d2626;
+      border: #0e3b0e;
+      border-radius: 10px;
+      font-size: large;
+      margin-left: 3%;
+      width: min-content;
+      height: min-content; }
+  .footer .copyright, .contenedor__contacto .contenedorFooter .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .copyright .texto--copyright, .contenedor__contacto .contenedorFooter .copyright .texto--copyright {
+      font-size: large;
+      text-align: center;
+      color: rgba(255, 255, 224, 0.226); }
+  .footer .contenedor__whatsapp, .contenedor__contacto .contenedorFooter .contenedor__whatsapp {
+    width: min-content; }
+    .footer .contenedor__whatsapp a, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a {
+      position: fixed;
+      bottom: 10px;
+      right: 10px; }
+      .footer .contenedor__whatsapp a img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a img {
+        width: 40px; }
+
+/*footer de paginas hechas con GRID*/
+.contenedor__contacto .contenedorFooter {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column; }
+  .contenedor__contacto .contenedorFooter .contenedor__redes {
+    display: flex;
+    justify-content: center; }
+    .contenedor__contacto .contenedorFooter .contenedor__redes img {
+      padding: 0px 2px; }
+  .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+    display: flex;
+    width: 100%;
+    padding: 0px 15px; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+      width: 25%; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+      width: 450px;
+      margin-left: 7px;
+      margin-right: 23px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+        border-radius: 10px;
+        font-size: large;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+      margin-top: 10px;
+      margin-left: 21px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
+        background-color: #8d2626;
+        border: #0e3b0e;
+        border-radius: 10px;
+        font-size: large;
+        width: min-content;
+        height: min-content; }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .footer, .contenedor__contacto .contenedorFooter {
+    overflow: hidden; }
+    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
+      font-size: 20px;
+      overflow: hidden; }
+  .contenidoNosotros .imagenes1 .imgArriba {
+    padding-top: 17%;
+    height: 80%; }
+  .contenidoNosotros .historia--parrafo {
+    font-size: large; }
+  .contenidoGaleria {
+    margin: 1.5% 0.5%; }
+  /*paginas hechas con GRID*/
+  .contenedor__contacto {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 90px 1fr 138px;
+    grid-template-areas: "header header" "content consulta" "footer footer"; }
+    .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+      height: 80%; }
+    .contenedor__contacto .contactanos--consultas .form--consultas {
+      height: 80%;
+      width: 100%; }
+    .contenedor__contacto .contenedorFooter {
+      height: 138px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+        width: 100%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+          width: 23%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+          margin-left: 32px;
+          margin-right: 0px;
+          width: 23.5%; }
+          .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+            width: 100%; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+          margin-left: 3.5%; } }
+
+/*termina paginas hechas con GRID*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .estilosNav {
+    height: auto;
+    font-size: larger;
+    background-color: #811616; }
+    .estilosNav .estilosNavbar .estilosMenu {
+      width: 100%; }
+    .estilosNav .login {
+      width: auto; }
+      .estilosNav .login .airesLogin {
+        width: 200px; }
+      .estilosNav .login .registroMobile {
+        display: flex; }
+      .estilosNav .login .registro {
+        display: none; }
+  /*nav para paginas hechas con GRID*/
+  .contenedor__contacto .headerContacto {
+    background-color: #811616; }
+    .contenedor__contacto .headerContacto .estilosNav {
+      margin: auto 0px;
+      padding: 8px 16px; }
+      .contenedor__contacto .headerContacto .estilosNav .estilosNavbar {
+        background-color: #811616; }
+  /*termina nav para paginas hechas con GRID*/
+  .mainHome {
+    min-height: calc(100vh - 90px - 340px); }
+    .mainHome .estilosLogo {
+      right: 0px;
+      left: 0px;
+      width: 100%;
+      top: 25%; }
+  .contenidoNosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px; }
+    .contenidoNosotros .historia1 {
+      order: 1;
+      margin: 0px; }
+    .contenidoNosotros .imagenes1 {
+      order: 2;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0px;
+      padding: 0px; }
+      .contenidoNosotros .imagenes1 .imgArriba {
+        width: 100%;
+        margin: 0px; }
+    .contenidoNosotros .imagenes2 {
+      margin: 0px;
+      padding: 0px;
+      order: 4; }
+      .contenidoNosotros .imagenes2 .imgAbajo {
+        margin: 0px;
+        width: 100%; }
+    .contenidoNosotros .historia2 {
+      order: 3; }
+    .contenidoNosotros .historia--parrafo {
+      font-size: large; }
+  .contenidoGaleria {
+    margin: 2.5% 2.5%; }
+    .contenidoGaleria .columnasGaleria img {
+      padding: 0px 2px;
+      width: 100%;
+      height: 100%; }
+  .navegable {
+    flex-wrap: nowrap; }
+    .navegable .filtrosShop {
+      justify-content: flex-start;
+      width: 20%; }
+      .navegable .filtrosShop input {
+        display: none; }
+      .navegable .filtrosShop .estiloFiltro {
+        display: none; }
+      .navegable .filtrosShop .filtroMobile {
+        display: flex; }
+    .navegable .contenedor_carrito {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .navegable .contenedor_carrito img {
+        width: 32px;
+        height: 32px; }
+  .contenidoShop .columnasShop {
+    margin: 0px;
+    border: 10px solid tan; }
+    .contenidoShop .columnasShop:hover {
+      transform: none;
+      transition: none; }
+    .contenidoShop .columnasShop img {
+      height: 60%;
+      margin: 30px; }
+  /*pagina hecha con GRID*/
+  .contenedor__contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 30% 30% 40%;
+    grid-template-areas: "header" "content" "consulta" "footer"; }
+    .contenedor__contacto .contenido__contacto, .contenedor__contacto .contactanos--consultas {
+      margin: 0px;
+      padding: 0px;
+      align-items: center; }
+      .contenedor__contacto .contenido__contacto .iframeMaps, .contenedor__contacto .contactanos--consultas .iframeMaps, .contenedor__contacto .contactanos--consultas .form--consultas {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 85%; }
+    .contenedor__contacto .contactanos--consultas {
+      align-items: center;
+      padding-top: 10px; }
+      .contenedor__contacto .contactanos--consultas .form--consultas {
+        align-items: stretch; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .dataContactanos, .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+          font-size: medium;
+          width: auto;
+          height: auto;
+          margin: 5px 2%; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .textoContactanos {
+          font-size: medium;
+          width: auto;
+          height: auto;
+          margin: 0px 2%; }
+        .contenedor__contacto .contactanos--consultas .form--consultas .inputEnviar {
+          font-size: medium;
+          width: 25%;
+          height: 35px;
+          margin: auto;
+          margin-top: 2%;
+          margin-bottom: 2%; }
+    .contenedor__contacto .encabezadoContacto {
+      margin: auto;
+      font-size: x-large; }
+  /*termina pagina hecha con GRID*/
+  .footer, .contenedor__contacto .contenedorFooter {
+    height: 340px; }
+    .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
+      animation-iteration-count: 0; }
+    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
+      margin-top: 8px;
+      text-align: center; }
+    .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px; }
+      .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
+        height: 35px; }
+      .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
+        margin-left: 0px; }
+    .footer .texto--copyright, .contenedor__contacto .contenedorFooter .texto--copyright {
+      padding-top: 5px; }
+    .footer .contenedor__whatsapp img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp img {
+      width: 32px; }
+  /*footer de paginas hechas con GRID*/
+  .contenedor__contacto .contenedorFooter {
+    height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+        margin-top: 4px;
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 11px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+          height: 35px;
+          width: 100%;
+          margin: 0px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 0px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
+          background-color: #8d2626;
+          border: #0e3b0e;
+          border-radius: 10px;
+          font-size: large;
+          width: min-content;
+          height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__pie {
+      margin-top: 6px; }
+  /*termina footer de paginas hechas con GRID*/ }

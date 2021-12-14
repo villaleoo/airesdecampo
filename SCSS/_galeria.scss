@@ -1,0 +1,22 @@
+@import "variables";
+.contenidoGaleria{
+    min-height: calc(100vh - 90px - 141px);
+    margin:30px 5px;
+    .columnasGaleria{
+        padding:0px;
+        display: flex;
+        justify-content: center;
+        img{
+            width:92%;
+            height: 100%; 
+        }
+    }
+    img{
+    &:hover{
+        transform:scale(1.1,1.1);
+        transition: all 1.7s;
+        position: absolute;
+        z-index: 9999;
+    }    
+    }
+}
