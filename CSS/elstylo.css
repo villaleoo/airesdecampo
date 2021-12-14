@@ -58,6 +58,95 @@ body {
   display: flex; }
 
 /*termina header de paginas con GRID*/
+.footer, .contenedor__contacto .contenedorFooter {
+  width: 100%;
+  height: 140px;
+  margin: 0px;
+  background-color: rgba(15, 82, 44, 0.719); }
+  .footer .contenedorRedes, .contenedor__contacto .contenedorFooter .contenedorRedes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .contenedorRedes a, .contenedor__contacto .contenedorFooter .contenedorRedes a {
+      padding: 0px 2px; }
+  .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
+    color: lightyellow;
+    font-size: x-large;
+    font-weight: bold; }
+  .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
+    animation-iteration-count: infinite; }
+  .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
+    margin-top: 10px; }
+    .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
+      border-radius: 10px;
+      font-size: large;
+      width: 100%;
+      height: 40px; }
+    .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
+      background-color: #8d2626;
+      border: #0e3b0e;
+      border-radius: 10px;
+      font-size: large;
+      margin-left: 3%;
+      width: min-content;
+      height: min-content; }
+  .footer .copyright, .contenedor__contacto .contenedorFooter .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .copyright .texto--copyright, .contenedor__contacto .contenedorFooter .copyright .texto--copyright {
+      font-size: large;
+      text-align: center;
+      color: rgba(255, 255, 224, 0.226); }
+  .footer .contenedor__whatsapp, .contenedor__contacto .contenedorFooter .contenedor__whatsapp {
+    width: min-content; }
+    .footer .contenedor__whatsapp a, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a {
+      position: fixed;
+      bottom: 10px;
+      right: 10px; }
+      .footer .contenedor__whatsapp a img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a img {
+        width: 40px; }
+
+/*footer de paginas hechas con GRID*/
+.contenedor__contacto .contenedorFooter {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column; }
+  .contenedor__contacto .contenedorFooter .contenedor__redes {
+    display: flex;
+    justify-content: center; }
+    .contenedor__contacto .contenedorFooter .contenedor__redes img {
+      padding: 0px 2px; }
+  .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+    display: flex;
+    width: 100%;
+    padding: 0px 15px; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+      width: 25%; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+      width: 450px;
+      margin-left: 7px;
+      margin-right: 23px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+        border-radius: 10px;
+        font-size: large;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+      margin-top: 10px;
+      margin-left: 21px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
+        background-color: #8d2626;
+        border: #0e3b0e;
+        border-radius: 10px;
+        font-size: large;
+        width: min-content;
+        height: min-content; }
+
 .fondoIndex {
   background-image: url(../imagenes/imagenes_sitio/fondito.jpg);
   background-position: center;
@@ -240,95 +329,6 @@ body {
     color: #065206; }
 
 /*termina pagina con GRID*/
-.footer, .contenedor__contacto .contenedorFooter {
-  width: 100%;
-  height: 140px;
-  margin: 0px;
-  background-color: rgba(15, 82, 44, 0.719); }
-  .footer .contenedorRedes, .contenedor__contacto .contenedorFooter .contenedorRedes {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .footer .contenedorRedes a, .contenedor__contacto .contenedorFooter .contenedorRedes a {
-      padding: 0px 2px; }
-  .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
-    color: lightyellow;
-    font-size: x-large;
-    font-weight: bold; }
-  .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
-    animation-iteration-count: infinite; }
-  .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
-    margin-top: 10px; }
-    .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
-      border-radius: 10px;
-      font-size: large;
-      width: 100%;
-      height: 40px; }
-    .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
-      background-color: #8d2626;
-      border: #0e3b0e;
-      border-radius: 10px;
-      font-size: large;
-      margin-left: 3%;
-      width: min-content;
-      height: min-content; }
-  .footer .copyright, .contenedor__contacto .contenedorFooter .copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .footer .copyright .texto--copyright, .contenedor__contacto .contenedorFooter .copyright .texto--copyright {
-      font-size: large;
-      text-align: center;
-      color: rgba(255, 255, 224, 0.226); }
-  .footer .contenedor__whatsapp, .contenedor__contacto .contenedorFooter .contenedor__whatsapp {
-    width: min-content; }
-    .footer .contenedor__whatsapp a, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a {
-      position: fixed;
-      bottom: 10px;
-      right: 10px; }
-      .footer .contenedor__whatsapp a img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp a img {
-        width: 40px; }
-
-/*footer de paginas hechas con GRID*/
-.contenedor__contacto .contenedorFooter {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column; }
-  .contenedor__contacto .contenedorFooter .contenedor__redes {
-    display: flex;
-    justify-content: center; }
-    .contenedor__contacto .contenedorFooter .contenedor__redes img {
-      padding: 0px 2px; }
-  .contenedor__contacto .contenedorFooter .contenedor__newsletter {
-    display: flex;
-    width: 100%;
-    padding: 0px 15px; }
-    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
-      width: 25%; }
-    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
-      width: 450px;
-      margin-left: 7px;
-      margin-right: 23px; }
-      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
-        border-radius: 10px;
-        font-size: large;
-        width: 100%;
-        height: 40px;
-        margin-top: 10px; }
-    .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
-      margin-top: 10px;
-      margin-left: 21px; }
-      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
-        background-color: #8d2626;
-        border: #0e3b0e;
-        border-radius: 10px;
-        font-size: large;
-        width: min-content;
-        height: min-content; }
-
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .footer, .contenedor__contacto .contenedorFooter {
     overflow: hidden; }
@@ -392,6 +392,69 @@ body {
       .contenedor__contacto .headerContacto .estilosNav .estilosNavbar {
         background-color: #811616; }
   /*termina nav para paginas hechas con GRID*/
+  .footer, .contenedor__contacto .contenedorFooter {
+    height: 340px; }
+    .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
+      animation-iteration-count: 0; }
+    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
+      margin-top: 8px;
+      text-align: center; }
+    .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px; }
+      .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
+        height: 35px; }
+      .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
+        margin-left: 0px; }
+    .footer .texto--copyright, .contenedor__contacto .contenedorFooter .texto--copyright {
+      padding-top: 5px; }
+    .footer .contenedor__whatsapp img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp img {
+      width: 32px; }
+  /*footer de paginas hechas con GRID*/
+  .contenedor__contacto .contenedorFooter {
+    height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__newsletter {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
+        margin-top: 4px;
+        padding-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 11px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
+          height: 35px;
+          width: 100%;
+          margin: 0px; }
+      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 0px; }
+        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
+          background-color: #8d2626;
+          border: #0e3b0e;
+          border-radius: 10px;
+          font-size: large;
+          width: min-content;
+          height: min-content; }
+    .contenedor__contacto .contenedorFooter .contenedor__pie {
+      margin-top: 6px; }
+  /*termina footer de paginas hechas con GRID*/
   .mainHome {
     min-height: calc(100vh - 90px - 340px); }
     .mainHome .estilosLogo {
@@ -499,67 +562,4 @@ body {
     .contenedor__contacto .encabezadoContacto {
       margin: auto;
       font-size: x-large; }
-  /*termina pagina hecha con GRID*/
-  .footer, .contenedor__contacto .contenedorFooter {
-    height: 340px; }
-    .footer .animate__pulse, .contenedor__contacto .contenedorFooter .animate__pulse {
-      animation-iteration-count: 0; }
-    .footer .encabezado--newsletter, .contenedor__contacto .contenedorFooter .encabezado--newsletter {
-      margin-top: 8px;
-      text-align: center; }
-    .footer .suscripcion, .contenedor__contacto .contenedorFooter .suscripcion {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5px; }
-      .footer .suscripcion .dataSuscripcion, .contenedor__contacto .contenedorFooter .suscripcion .dataSuscripcion {
-        height: 35px; }
-      .footer .suscripcion .input__suscribirse, .contenedor__contacto .contenedorFooter .suscripcion .input__suscribirse {
-        margin-left: 0px; }
-    .footer .texto--copyright, .contenedor__contacto .contenedorFooter .texto--copyright {
-      padding-top: 5px; }
-    .footer .contenedor__whatsapp img, .contenedor__contacto .contenedorFooter .contenedor__whatsapp img {
-      width: 32px; }
-  /*footer de paginas hechas con GRID*/
-  .contenedor__contacto .contenedorFooter {
-    height: min-content; }
-    .contenedor__contacto .contenedorFooter .contenedor__newsletter {
-      display: flex;
-      flex-direction: column;
-      width: 100%; }
-      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedorH3 {
-        margin-top: 4px;
-        padding-bottom: 15px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion {
-        width: 100%;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 11px; }
-        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__suscripcion .data--Suscripcion {
-          height: 35px;
-          width: 100%;
-          margin: 0px; }
-      .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-        margin-left: 0px; }
-        .contenedor__contacto .contenedorFooter .contenedor__newsletter .contenedor__boton .input--suscribirse {
-          background-color: #8d2626;
-          border: #0e3b0e;
-          border-radius: 10px;
-          font-size: large;
-          width: min-content;
-          height: min-content; }
-    .contenedor__contacto .contenedorFooter .contenedor__pie {
-      margin-top: 6px; }
-  /*termina footer de paginas hechas con GRID*/ }
+  /*termina pagina hecha con GRID*/ }
