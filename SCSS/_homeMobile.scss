@@ -2,9 +2,11 @@
 .mainHome{
     min-height: calc(100vh - 90px - 340px);
     .estilosLogo{
-        right:0px;
-        left:0px;
-        width:100%;
-        top:25%;
+        align-items: center;
+        top:0;
+        position: relative;
+        h1{
+            font-size: 53px;
+        }
     }
 }

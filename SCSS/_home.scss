@@ -8,17 +8,14 @@
 .mainHome{
     min-height: calc(100vh - 90px - 140px);
     .estilosLogo{
-        position: absolute;
-        z-index: 2;
-        overflow-x: hidden;
-        top:33%;
-        bottom: auto;
-        right: 0px;
-        left: 20%;
-        width: 60%;
-        height: 14%;
-        img{
-            @include fullTamanio;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:180px;
+        h1{
+            font-family: "Dancing Script";
+            font-size: 150px;
+            color:$cLogo;
         }
     }
 }
