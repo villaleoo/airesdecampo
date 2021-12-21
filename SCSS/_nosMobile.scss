@@ -2,36 +2,39 @@
 .contenidoNosotros{
     display: flex;
     flex-direction: column;
-    margin:0px;
     padding:0px;
-    .historia1{
+    .nosotrosPrincipio{
         order: 1;
-        margin:0px;
+        margin:0px 0px;
     }
-    .imagenes1{
+    .imagenesPrincipio{
         order:2;
         flex-wrap: wrap;
         width: 100%;
         margin:0px;
         padding:0px;
-        .imgArriba{
+        .imgPrincipio{
             width: 100%;
             margin:0px;
         }
     }
-    .imagenes2{
+    .imagenesActualidad{
         margin:0px;
         padding:0px;
         order:4;
-        .imgAbajo{
+        .imgActualidad{
             margin:0px;
             width:100%;
         }
     }
-    .historia2{
+    .nosotrosActualidad{
         order:3;
     }
-    .historia--parrafo{
+    .encabezadosNosotros{
+        padding: 0px 0px;
+    }
+    .parrafosNosotros{
+        padding:0px 0px;
         font-size:map-get($estilosTexto,fuenteDesktop);
     }
 }

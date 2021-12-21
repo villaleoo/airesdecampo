@@ -7,12 +7,13 @@
     background-color: rgba(15, 82, 44, 0.719);
     .contenedorRedes{
         width: 100%;
+        margin-top: 5px;
         @include flex-row-center-center;
         a{
             padding:0px 2px;
         }
     }
-    .encabezado--newsletter{
+    .encabezadoNewsletter{
         color: $cEnlaces;
         font-size: map-get($estilosTexto, fuenteXdesktop);
         font-weight: bold;
@@ -28,7 +29,7 @@
             width: 100%;
             height: 40px;
         }
-        .input__suscribirse{
+        .inputSuscripcion{
             background-color: rgb(141, 38, 38);
             border:rgb(14, 59, 14);
             border-radius: 10px;
@@ -40,13 +41,13 @@
     }
     .copyright{
         @include flex-row-center-center;
-        .texto--copyright{
+        .textoCopyright{
             font-size:map-get($estilosTexto, fuenteDesktop);
             @include textoCentro;
             color: rgba(255, 255, 224, 0.226);
         }
     }
-    .contenedor__whatsapp{
+    .fixedWhatsapp{
         width: min-content;
         a{
             position: fixed;
@@ -61,31 +62,37 @@
 
 }
 /*footer de paginas hechas con GRID*/
-.contenedor__contacto{
+.contenedorContacto{
     .contenedorFooter{
         @extend .footer;
+        height: 147px;
         grid-area:footer;
         display: flex;
         flex-direction: column;
-        .contenedor__redes{
+        .contenedorFooter__redes{
+            margin-top: 5px;
             display: flex;
             justify-content: center;
             img{
                 padding:0px 2px;
             }
         }
-        .contenedor__newsletter{
+        .contenedorFooter__newsletter{
             display: flex;
             width: 100%;
             padding:0px 15px;
-            .contenedorH3{
+            .newsletter__h3{
                 width:25%;
+                .h3--encabezado{
+                    @extend .encabezadoNewsletter;
+                }
             }
-            .contenedor__suscripcion{
+            .contenedorFooter__suscripcion{
                 width:450px;
+                margin:0;
                 margin-left:7px;
                 margin-right:23px;
-                .data--Suscripcion{
+                .suscripcion--data{
                     border-radius: 10px;
                     font-size: map-get($estilosTexto, fuenteDesktop);
                     width: 100%;
@@ -93,10 +100,11 @@
                     margin-top: 10px;
                 }
             }
-            .contenedor__boton{
+            .contenedorFooter__boton{
+                margin:0;
                 margin-top:10px;
                 margin-left: 21px;
-                .input--suscribirse{
+                .boton--suscripcion{
                     background-color: rgb(141, 38, 38);
                     border:rgb(14, 59, 14);
                     border-radius: 10px;

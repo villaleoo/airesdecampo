@@ -3,47 +3,47 @@
     min-height: calc(100vh - 90px - 141px);
     width: 100%;
     overflow: hidden;
-    .historia1{
+    margin:10px 0px;
+    .nosotrosPrincipio{
         margin:5px 0px;
         overflow: hidden;
     }
-    .imagenes1{
+    .imagenesPrincipio{
         margin:5px 0px;
         display: flex;
         justify-content: center;
         width: 100%;
-        .imgArriba{
+        .imgPrincipio{
             margin:0px 2.5px;
             width:50%;
             height: 100%;             
         }
     }
-    .imagenes2{
+    .imagenesActualidad{
         overflow: hidden;
         display: flex;
         width: 100%;
-        .imgAbajo{
-            margin-top:0px;
-            margin-bottom: 5px;
+        margin:5px 0px;
+        .imgActualidad{
             width:90%;
             height: 100%;
             overflow: hidden;
         }
     }
-    .historia2{
+    .nosotrosActualidad{
+        margin:5px 0px;
         overflow: hidden;
     }
-    .historia--encabezado{
+    .encabezadosNosotros{
         overflow: hidden;
         padding-left:2%;
         font-size:map-get($estilosTexto,fuenteXXdesktop);
         font-style:map-get($estilosTexto,cursiva);
         color:$cEncabezados;
     }
-    .historia--parrafo{
-        padding-left:4%;
-        width:93%;
-        height: 100%;
+    .parrafosNosotros{
+        padding:0px 4%;
+        @include fullTamanio;
         text-align: map-get($estilosTexto,justificado);
         font-size:map-get($estilosTexto,fuenteXdesktop);
         color:black;

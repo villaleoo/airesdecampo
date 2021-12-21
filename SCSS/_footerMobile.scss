@@ -4,7 +4,7 @@
     .animate__pulse{
         animation-iteration-count: 0;
     }
-    .encabezado--newsletter{
+    .encabezadoNewsletter{
         margin-top: 8px;
         @include textoCentro;
     }
@@ -14,58 +14,46 @@
         .dataSuscripcion{
             height: 35px;
         }
-        .input__suscribirse{
+        .inputSuscripcion{
             margin-left: 0px;
         }
     }
-    .texto--copyright{
+    .textoCopyright{
         padding-top: 5px;
     }
-    .contenedor__whatsapp{
+    .fixedWhatsapp{
         img{
             width:32px;
         }
     }
 }
 /*footer de paginas hechas con GRID*/
-.contenedor__contacto{
+.contenedorContacto{
     .contenedorFooter{
         height: min-content;
-        .contenedor__newsletter{
+        .contenedorFooter__newsletter{
             display: flex;
             flex-direction: column;
             width: 100%;
-            .contenedorH3{
-                margin-top: 4px;
-                padding-bottom: 15px;
+            .newsletter__h3{
+                padding-bottom: 5px;
                 width:100%;
                 @include flex-row-center-center;
             }
-            .contenedor__suscripcion{
+            .contenedorFooter__suscripcion{
                 width:100%;
-                margin-right: 0px;
-                margin-left: 0px;
-                margin-top: 0px;
-                margin-bottom: 11px;
-                .data--Suscripcion{
+                margin:0;
+                .suscripcion--data{
                     height: 35px;
                     width: 100%;
                     margin:0px;
+                    margin-bottom: 5px;
                 }
             }
-            .contenedor__boton{
+            .contenedorFooter__boton{
                 @include flex-column-center;
                 align-items: center;
-                margin-top:0px;
-                margin-left: 0px;
-                .input--suscribirse{
-                    background-color: rgb(141, 38, 38);
-                    border:rgb(14, 59, 14);
-                    border-radius: 10px;
-                    font-size:map-get($estilosTexto, fuenteDesktop);
-                    width:min-content;
-                    height: min-content;
-                }
+                margin:0;
             } 
         }
         .contenedor__pie{
