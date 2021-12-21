@@ -7,6 +7,14 @@
             overflow:hidden;
         }
     }
+    .mainHome{
+        .estilosLogo{
+            top:140px;
+            h1{
+                font-size: 110px;
+            }
+        }
+    }
     .contenidoNosotros{
         .parrafosNosotros{
             font-size:map-get($estilosTexto,fuenteDesktop);
