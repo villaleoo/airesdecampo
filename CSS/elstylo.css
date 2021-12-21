@@ -368,9 +368,9 @@ body {
           .contenedorContacto .contenedorFooter .contenedorFooter__newsletter .contenedorFooter__suscripcion .suscripcion--data {
             width: 100%; }
         .contenedorContacto .contenedorFooter .contenedorFooter__newsletter .contenedorFooter__boton {
-          margin-left: 3.5%; } }
+          margin-left: 3.5%; }
+  /*termina paginas hechas con GRID*/ }
 
-/*termina paginas hechas con GRID*/
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .estilosNav {
     height: auto;
